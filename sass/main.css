@@ -192,4 +192,16 @@ body {
 .heading-secondary {
     font-size: 3.5rem;
     font-weight: 700;
-    text-
+    text-transform: uppercase;
+    display:inline-block;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba(var(--color-black-rgb), .2);
+    }
+}
